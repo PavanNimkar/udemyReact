@@ -1,7 +1,10 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function Counter() {
+  useEffect(() => {
+    window.alert("I am clicked!");
+  });
   let count = 0;
   const [currentCount, setCount] = useState(count);
   const countIncrement = () => {
